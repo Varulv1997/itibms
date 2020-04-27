@@ -9,15 +9,15 @@ var chartcolumn = jQuery('#chart-column')
  if (chartcolumn.length > 0) {
    var options = {
     series: [{
-    name: 'Income',
+    name: 'ITIBMS',
     type: 'column',
     data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6]
   }, {
-    name: 'Cashflow',
+    name: 'Regular',
     type: 'column',
     data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5]
   }, {
-    name: 'Revenue',
+    name: 'Global',
     type: 'line',
     data: [20, 29, 37, 36, 44, 45, 50, 58]
   }],
@@ -33,7 +33,7 @@ var chartcolumn = jQuery('#chart-column')
   dataLabels: {
     enabled: false
   },
-  colors: ['#30b666', '#291843', '#e0e0e0'],
+  colors: ['#5d64c0', '#291843', '#e0e0e0'],
   stroke: {
     width: [1, 1, 4]
   },
@@ -43,7 +43,7 @@ var chartcolumn = jQuery('#chart-column')
   },
   xaxis: {
      show: false,
-    categories: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
+    categories: [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
   },
   yaxis: [
     {
@@ -61,7 +61,7 @@ var chartcolumn = jQuery('#chart-column')
         }
       },
       title: {
-        text: "Income (thousand crores)",
+        text: "Businesses moved to ITIBMS",
         style: {
           color: '#008FFB',
         }
@@ -86,7 +86,7 @@ var chartcolumn = jQuery('#chart-column')
         }
       },
       title: {
-        text: "Operating Cashflow (thousand crores)",
+        text: "Success rates in the market, for each",
         style: {
           color: '#00E396',
         }
@@ -108,7 +108,7 @@ var chartcolumn = jQuery('#chart-column')
         },
       },
       title: {
-        text: "Revenue (thousand crores)",
+        text: "Businesses moved to ITIBMS",
         style: {
           color: '#483a5f',
         }
@@ -168,7 +168,7 @@ var chartwave = jQuery('#chart-wave')
     dataLabels: {
       enabled: false
     },
-    colors: ['#30b666', '#291843'],
+    colors: ['#5d64c0', '#291843'],
     stroke: {
       curve: 'smooth'
     },

@@ -1,8 +1,5 @@
 /*
 
-Template: Finaxo - Business and Finance HTML5 Template
-Author: potenzaglobalsolutions
-Design and Developed by: potenzaglobalsolutions.com
 
 NOTE: This file contains all scripts for the actual Template.
 
