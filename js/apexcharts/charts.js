@@ -33,7 +33,7 @@ var chartcolumn = jQuery('#chart-column')
   dataLabels: {
     enabled: false
   },
-  colors: ['#5d64c0', '#291843', '#e0e0e0'],
+  colors: ['#ee0000', '#abbad0', '#e0e0e0'],
   stroke: {
     width: [1, 1, 4]
   },
@@ -168,7 +168,7 @@ var chartwave = jQuery('#chart-wave')
     dataLabels: {
       enabled: false
     },
-    colors: ['#5d64c0', '#291843'],
+    colors: ['#ee0000', '#291843'],
     stroke: {
       curve: 'smooth'
     },
