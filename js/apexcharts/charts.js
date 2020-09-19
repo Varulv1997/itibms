@@ -33,7 +33,7 @@ var chartcolumn = jQuery('#chart-column')
   dataLabels: {
     enabled: false
   },
-  colors: ['#ee0000', '#abbad0', '#e0e0e0'],
+  colors: ['#e41134', '#abbad0', '#e0e0e0'],
   stroke: {
     width: [1, 1, 4]
   },
@@ -53,17 +53,17 @@ var chartcolumn = jQuery('#chart-column')
       },
       axisBorder: {
         show: false,
-        color: '#008FFB'
+        color: '#2a2731'
       },
       labels: {
         style: {
-          colors: '#008FFB',
+          colors: '#2a2731',
         }
       },
       title: {
         text: "Businesses moved to ITIBMS",
         style: {
-          color: '#008FFB',
+          color: '#2a2731',
         }
       },
       tooltip: {
@@ -78,17 +78,17 @@ var chartcolumn = jQuery('#chart-column')
       },
       axisBorder: {
         show: false,
-        color: '#00E396'
+        color: '#42afaf'
       },
       labels: {
         style: {
-          colors: '#00E396',
+          colors: '#42afaf',
         }
       },
       title: {
         text: "Success rates in the market, for each",
         style: {
-          color: '#00E396',
+          color: '#42afaf',
         }
       },
     },
@@ -168,7 +168,7 @@ var chartwave = jQuery('#chart-wave')
     dataLabels: {
       enabled: false
     },
-    colors: ['#ee0000', '#291843'],
+    colors: ['#e41134', '#5d4157'],
     stroke: {
       curve: 'smooth'
     },
