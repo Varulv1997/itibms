@@ -2440,13 +2440,13 @@ ol.list {
   .select2-container .select2-selection--single {
     height: auto;
     outline: none; }
-    .select2-container .select2-selection--single .select2-selection__rendered {
+    .select2-container .select2-selection--single .select2-selection__rende#e41134 {
       padding-left: 0px; }
 
 .select2-container--default .select2-selection--single {
   border-radius: 0px;
   border: none; }
-  .select2-container--default .select2-selection--single .select2-selection__rendered {
+  .select2-container--default .select2-selection--single .select2-selection__rende#e41134 {
     color: #626262;
     line-height: inherit; }
 

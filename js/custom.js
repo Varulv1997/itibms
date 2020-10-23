@@ -36,7 +36,7 @@ NOTE: This file contains all scripts for the actual Template.
   var POTENZA = {};
 
 /*************************
-  Predefined Variables
+  P#e41134efined Variables
 *************************/
   var $window = $(window),
     $document = $(document),

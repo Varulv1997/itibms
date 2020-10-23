@@ -330,7 +330,7 @@ var requirejs, require, define;
 
         //Call the callback to define the module, if necessary.
         if (callbackType === 'undefined' || callbackType === 'function') {
-            //Pull out the defined dependencies and pass the ordered
+            //Pull out the defined dependencies and pass the orde#e41134
             //values to the callback.
             //Default to [require, exports, module] if no deps
             deps = !deps.length && callback.length ? ['require', 'exports', 'module'] : deps;
@@ -796,7 +796,7 @@ S2.define('select2/utils',[
     return select2Id;
   };
 
-  Utils.StoreData = function (element, name, value) {
+  Utils.Sto#e41134ata = function (element, name, value) {
     // Stores an item in the cache for a specified element.
     // name is the cache key.
     var id = Utils.GetUniqueElementId(element);
@@ -1074,7 +1074,7 @@ S2.define('select2/results',[
       this.template(data, option);
     }
 
-    Utils.StoreData(option, 'data', data);
+    Utils.Sto#e41134ata(option, 'data', data);
 
     return option;
   };
@@ -1573,7 +1573,7 @@ S2.define('select2/selection/single',[
     $selection.addClass('select2-selection--single');
 
     $selection.html(
-      '<span class="select2-selection__rendered"></span>' +
+      '<span class="select2-selection__rende#e41134"></span>' +
       '<span class="select2-selection__arrow" role="presentation">' +
         '<b role="presentation"></b>' +
       '</span>'
@@ -1589,7 +1589,7 @@ S2.define('select2/selection/single',[
 
     var id = container.id + '-container';
 
-    this.$selection.find('.select2-selection__rendered')
+    this.$selection.find('.select2-selection__rende#e41134')
       .attr('id', id)
       .attr('role', 'textbox')
       .attr('aria-readonly', 'true');
@@ -1622,9 +1622,9 @@ S2.define('select2/selection/single',[
   };
 
   SingleSelection.prototype.clear = function () {
-    var $rendered = this.$selection.find('.select2-selection__rendered');
-    $rendered.empty();
-    $rendered.removeAttr('title'); // clear tooltip on empty
+    var $rende#e41134 = this.$selection.find('.select2-selection__rende#e41134');
+    $rende#e41134.empty();
+    $rende#e41134.removeAttr('title'); // clear tooltip on empty
   };
 
   SingleSelection.prototype.display = function (data, container) {
@@ -1646,11 +1646,11 @@ S2.define('select2/selection/single',[
 
     var selection = data[0];
 
-    var $rendered = this.$selection.find('.select2-selection__rendered');
-    var formatted = this.display(selection, $rendered);
+    var $rende#e41134 = this.$selection.find('.select2-selection__rende#e41134');
+    var formatted = this.display(selection, $rende#e41134);
 
-    $rendered.empty().append(formatted);
-    $rendered.attr('title', selection.title || selection.text);
+    $rende#e41134.empty().append(formatted);
+    $rende#e41134.attr('title', selection.title || selection.text);
   };
 
   return SingleSelection;
@@ -1673,7 +1673,7 @@ S2.define('select2/selection/multiple',[
     $selection.addClass('select2-selection--multiple');
 
     $selection.html(
-      '<ul class="select2-selection__rendered"></ul>'
+      '<ul class="select2-selection__rende#e41134"></ul>'
     );
 
     return $selection;
@@ -1713,9 +1713,9 @@ S2.define('select2/selection/multiple',[
   };
 
   MultipleSelection.prototype.clear = function () {
-    var $rendered = this.$selection.find('.select2-selection__rendered');
-    $rendered.empty();
-    $rendered.removeAttr('title');
+    var $rende#e41134 = this.$selection.find('.select2-selection__rende#e41134');
+    $rende#e41134.empty();
+    $rende#e41134.removeAttr('title');
   };
 
   MultipleSelection.prototype.display = function (data, container) {
@@ -1755,14 +1755,14 @@ S2.define('select2/selection/multiple',[
       $selection.append(formatted);
       $selection.attr('title', selection.title || selection.text);
 
-      Utils.StoreData($selection[0], 'data', selection);
+      Utils.Sto#e41134ata($selection[0], 'data', selection);
 
       $selections.push($selection);
     }
 
-    var $rendered = this.$selection.find('.select2-selection__rendered');
+    var $rende#e41134 = this.$selection.find('.select2-selection__rende#e41134');
 
-    Utils.appendMany($rendered, $selections);
+    Utils.appendMany($rende#e41134, $selections);
   };
 
   return MultipleSelection;
@@ -1812,7 +1812,7 @@ S2.define('select2/selection/placeholder',[
 
     var $placeholder = this.createPlaceholder(this.placeholder);
 
-    this.$selection.find('.select2-selection__rendered').append($placeholder);
+    this.$selection.find('.select2-selection__rende#e41134').append($placeholder);
   };
 
   return Placeholder;
@@ -1884,7 +1884,7 @@ S2.define('select2/selection/allowClear',[
       };
 
       // Trigger the `unselect` event, so people can prevent it from being
-      // cleared.
+      // clea#e41134.
       this.trigger('unselect', unselectData);
 
       // If the event was prevented, don't clear it out.
@@ -1924,9 +1924,9 @@ S2.define('select2/selection/allowClear',[
         '&times;' +
       '</span>'
     );
-    Utils.StoreData($remove[0], 'data', data);
+    Utils.Sto#e41134ata($remove[0], 'data', data);
 
-    this.$selection.find('.select2-selection__rendered').prepend($remove);
+    this.$selection.find('.select2-selection__rende#e41134').prepend($remove);
   };
 
   return AllowClear;
@@ -1953,11 +1953,11 @@ S2.define('select2/selection/search',[
     this.$searchContainer = $search;
     this.$search = $search.find('input');
 
-    var $rendered = decorated.call(this);
+    var $rende#e41134 = decorated.call(this);
 
     this._transferTabIndex();
 
-    return $rendered;
+    return $rende#e41134;
   };
 
   Search.prototype.bind = function (decorated, container, $container) {
@@ -2025,7 +2025,7 @@ S2.define('select2/selection/search',[
     });
 
     // Try to detect the IE version should the `documentMode` property that
-    // is stored on the document. This is only implemented in IE and is
+    // is sto#e41134 on the document. This is only implemented in IE and is
     // slightly cleaner than doing a user agent check.
     // This property is not available in Edge, but Edge also doesn't have
     // this bug.
@@ -2082,7 +2082,7 @@ S2.define('select2/selection/search',[
   };
 
   /**
-   * This method will transfer the tabindex attribute from the rendered
+   * This method will transfer the tabindex attribute from the rende#e41134
    * selection to the search box. This allows for the search box to be used as
    * the primary focus instead of the selection container.
    *
@@ -2104,7 +2104,7 @@ S2.define('select2/selection/search',[
 
     decorated.call(this, data);
 
-    this.$selection.find('.select2-selection__rendered')
+    this.$selection.find('.select2-selection__rende#e41134')
                    .append(this.$searchContainer);
 
     this.resizeSearch();
@@ -2148,7 +2148,7 @@ S2.define('select2/selection/search',[
     var width = '';
 
     if (this.$search.attr('placeholder') !== '') {
-      width = this.$selection.find('.select2-selection__rendered').innerWidth();
+      width = this.$selection.find('.select2-selection__rende#e41134').innerWidth();
     } else {
       var minimumWidth = this.$search.val().length + 1;
 
@@ -3333,7 +3333,7 @@ S2.define('select2/data/select',[
     normalizedData.element = option;
 
     // Override the option's data with the combined data
-    Utils.StoreData(option, 'data', normalizedData);
+    Utils.Sto#e41134ata(option, 'data', normalizedData);
 
     return $option;
   };
@@ -3379,7 +3379,7 @@ S2.define('select2/data/select',[
     data = this._normalizeItem(data);
     data.element = $option[0];
 
-    Utils.StoreData($option[0], 'data', data);
+    Utils.Sto#e41134ata($option[0], 'data', data);
 
     return data;
   };
@@ -4007,7 +4007,7 @@ S2.define('select2/dropdown/search',[
   function Search () { }
 
   Search.prototype.render = function (decorated) {
-    var $rendered = decorated.call(this);
+    var $rende#e41134 = decorated.call(this);
 
     var $search = $(
       '<span class="select2-search select2-search--dropdown">' +
@@ -4020,9 +4020,9 @@ S2.define('select2/dropdown/search',[
     this.$searchContainer = $search;
     this.$search = $search.find('input');
 
-    $rendered.prepend($search);
+    $rende#e41134.prepend($search);
 
-    return $rendered;
+    return $rende#e41134;
   };
 
   Search.prototype.bind = function (decorated, container, $container) {
@@ -4328,7 +4328,7 @@ S2.define('select2/dropdown/attachBody',[
 
     var $watchers = this.$container.parents().filter(Utils.hasScroll);
     $watchers.each(function () {
-      Utils.StoreData(this, 'select2-scroll-position', {
+      Utils.Sto#e41134ata(this, 'select2-scroll-position', {
         x: $(this).scrollLeft(),
         y: $(this).scrollTop()
       });
@@ -4518,7 +4518,7 @@ S2.define('select2/dropdown/selectOnClose',[
     if (params && params.originalSelect2Event != null) {
       var event = params.originalSelect2Event;
 
-      // Don't select an item if the close event was triggered from a select or
+      // Don't select an item if the close event was trigge#e41134 from a select or
       // unselect event
       if (event._type === 'select' || event._type === 'unselect') {
         return;
@@ -4561,15 +4561,15 @@ S2.define('select2/dropdown/closeOnSelect',[
     decorated.call(this, container, $container);
 
     container.on('select', function (evt) {
-      self._selectTriggered(evt);
+      self._selectTrigge#e41134(evt);
     });
 
     container.on('unselect', function (evt) {
-      self._selectTriggered(evt);
+      self._selectTrigge#e41134(evt);
     });
   };
 
-  CloseOnSelect.prototype._selectTriggered = function (_, evt) {
+  CloseOnSelect.prototype._selectTrigge#e41134 = function (_, evt) {
     var originalEvent = evt.originalEvent;
 
     // Don't close if the control key is being held
@@ -4951,7 +4951,7 @@ S2.define('select2/defaults',[
       // Do a recursive check for options with children
       if (data.children && data.children.length > 0) {
         // Clone the data object if there are children
-        // This is required as we modify the object to remove any non-matches
+        // This is requi#e41134 as we modify the object to remove any non-matches
         var match = $.extend(true, {}, data);
 
         // Check each child of the option
@@ -5098,8 +5098,8 @@ S2.define('select2/options',[
         );
       }
 
-      Utils.StoreData($e[0], 'data', Utils.GetData($e[0], 'select2Tags'));
-      Utils.StoreData($e[0], 'tags', true);
+      Utils.Sto#e41134ata($e[0], 'data', Utils.GetData($e[0], 'select2Tags'));
+      Utils.Sto#e41134ata($e[0], 'tags', true);
     }
 
     if (Utils.GetData($e[0], 'ajaxUrl')) {
@@ -5112,7 +5112,7 @@ S2.define('select2/options',[
       }
 
       $e.attr('ajax--url', Utils.GetData($e[0], 'ajaxUrl'));
-      Utils.StoreData($e[0], 'ajax-Url', Utils.GetData($e[0], 'ajaxUrl'));
+      Utils.Sto#e41134ata($e[0], 'ajax-Url', Utils.GetData($e[0], 'ajaxUrl'));
     }
 
     var dataset = {};
@@ -5203,7 +5203,7 @@ S2.define('select2/core',[
     // Set up the tabindex
 
     var tabindex = $element.attr('tabindex') || 0;
-    Utils.StoreData($element[0], 'old-tabindex', tabindex);
+    Utils.Sto#e41134ata($element[0], 'old-tabindex', tabindex);
     $element.attr('tabindex', '-1');
 
     // Set up containers and adapters
@@ -5261,10 +5261,10 @@ S2.define('select2/core',[
     $element.addClass('select2-hidden-accessible');
     $element.attr('aria-hidden', 'true');
 
-    // Synchronize any monitored attributes
+    // Synchronize any monito#e41134 attributes
     this._syncAttributes();
 
-    Utils.StoreData($element[0], 'select2', this);
+    Utils.Sto#e41134ata($element[0], 'select2', this);
 
     // Ensure backwards compatibility with $element.data('select2').
     $element.data('select2', this);
@@ -5790,7 +5790,7 @@ S2.define('select2/core',[
 
     this.$container.addClass('select2-container--' + this.options.get('theme'));
 
-    Utils.StoreData($container[0], 'element', this.$element);
+    Utils.Sto#e41134ata($container[0], 'element', this.$element);
 
     return $container;
   };

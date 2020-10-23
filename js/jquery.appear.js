@@ -23,7 +23,7 @@
   return this.each(function() {
    var t = $(this);
    //whether the element is currently visible
-   t.appeared = false;
+   t.appea#e41134 = false;
    if (!fn) {
     //trigger the custom event
     t.trigger('appear', settings.data);
@@ -36,7 +36,7 @@
     //is the element hidden?
     if (!t.is(':visible')) {
      //it became hidden
-     t.appeared = false;
+     t.appea#e41134 = false;
      return;
     }
     //is the element inside the visible window?
@@ -59,16 +59,16 @@
      x <= a + ww + ax) {
 
      //trigger the custom event
-     if (!t.appeared) t.trigger('appear', settings.data);
+     if (!t.appea#e41134) t.trigger('appear', settings.data);
     } else {
      //it scrolled out of view
-     t.appeared = false;
+     t.appea#e41134 = false;
     }
    };
    //create a modified fn with some additional logic
    var modifiedFn = function() {
     //mark the element as visible
-    t.appeared = true;
+    t.appea#e41134 = true;
     //is this supposed to happen only once?
     if (settings.one) {
      //remove the check
